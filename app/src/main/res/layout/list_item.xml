@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/list_englishId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="word"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/list_chineseId"
+        android:paddingLeft="30dp"
+        android:layout_toRightOf="@+id/list_englishId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="word"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"/>
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_englishId"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完全陌生"
+            android:textColor="@color/colorGray"/>
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="似曾相识"
+            android:textColor="@color/colorGray"/>
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="熟悉"
+            android:textColor="@color/colorGray"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/deleteId"
+        android:layout_toRightOf="@+id/radioGroupId"
+        android:layout_below="@+id/list_englishId"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="删除" />
+
+    <View
+        android:id="@+id/lineId"
+        android:layout_below="@+id/radioGroupId"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />  <!-- 黑色水平线 -->
+
+</RelativeLayout>
